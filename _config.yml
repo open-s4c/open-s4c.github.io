@@ -1,0 +1,26 @@
+title: Safe and Scalable System Software Concurrency
+email: vsync@huawei.com
+description: >-
+  Home to concurrency projects for system software.
+
+#baseurl: ""
+#url: ""
+#twitter_username: jekyllrb
+#github_username: open-s4c
+
+theme: minima
+minima:
+  nav_pages:
+    - about.md
+show_drafts: false
+list_title: none
+
+#lsi: false
+#safe: true
+incremental: false
+#highlighter: rouge
+#gist:
+#  noscript: false
+#kramdown:
+#  math_engine: mathjax
+#  syntax_highlighter: rouge
