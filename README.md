@@ -20,7 +20,14 @@ S4C is home to a set of concurrency projects targeting system software.
   on WMMs, which employs state-of-the-art model checkers [Dartagnan][] and
   [GenMC][].
 
-- [benchkit][]: A framework to support the development of reproducible benchmarks.
+- [benchkit][]: is a Python framework for building and running reproducible
+  performance benchmarks for system software.  It provides a declarative way to
+  define benchmark configurations and parameter spaces, and to execute
+  controlled benchmark campaigns across platforms. benchkit emphasizes
+  experimental rigor (such as environment stabilization, affinity and
+  scheduling control, and structured result collection) to enable fair and
+  repeatable evaluation of synchronization primitives, schedulers, and other
+  system components.
 
 - [Dice](/dice): A lightweight, extensible C framework for capturing and
   distributing execution events in multithreaded programs. Designed for low
@@ -45,4 +52,3 @@ S4C is home to a set of concurrency projects targeting system software.
 [publication]: https://dl.acm.org/doi/abs/10.1145/3445814.3446748
 [Dartagnan]: https://github.com/hernanponcedeleon/Dat3M
 [GenMC]: https://github.com/MPI-SWS/genmc
-
