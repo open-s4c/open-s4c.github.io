@@ -16,11 +16,11 @@ S4C is home to a set of concurrency projects targeting system software.
   concurrent data structures (eg, queues, lists, maps).  The library has been
   verified and optimized for Weak Memory Models (WMMs) such as in Arm CPUs.
 
-- [vsyncer]: is a toolkit to verify and optimize concurrent C/C++ programs
+- [vsyncer][]: is a toolkit to verify and optimize concurrent C/C++ programs
   on WMMs, which employs state-of-the-art model checkers [Dartagnan][] and
   [GenMC][].
 
-- [benchkit]: A framework to support the development of reproducible benchmarks.
+- [benchkit][]: A framework to support the development of reproducible benchmarks.
 
 - [Dice](/dice): A lightweight, extensible C framework for capturing and
   distributing execution events in multithreaded programs. Designed for low
