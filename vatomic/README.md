@@ -1,4 +1,4 @@
-# VSync atomics - formally-verified atomic operations library
+# vatomic - formally-verified atomic operations library
 
 vatomic is a header library of *atomics operations*, supporting mainstream
 architectures: ARMv7, ARMv8 (AArch32 and AArch64), RISC-V, and x86_64. The
@@ -17,6 +17,8 @@ with compiler extensions disabled, so every shipped header and test builds
 cleanly in that dialect out of the box. The C++ bindings and tests are likewise
 compiled as C++11 (no compiler extensions), which we exercise in the same
 comprehensive build.
+
+See [API documentation here](doc/api).
 
 This project is a spinoff of the VSync project and a key component in
 [libvsync][]. Refer to our ASPLOS'21 [publication][paper] describing part of the
