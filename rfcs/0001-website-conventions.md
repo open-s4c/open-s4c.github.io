@@ -1,4 +1,4 @@
-# RFC-001 S4C: Website Conventions
+# RFC-0001 S4C: Website Conventions
 
 ## 1. Introduction
 
