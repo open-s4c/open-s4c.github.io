@@ -1,4 +1,4 @@
-# vatomic - formally-verified atomic operations library
+# vatomic: Formally-verified atomic operations
 
 vatomic is a header library of *atomics operations*, supporting mainstream
 architectures: ARMv7, ARMv8 (AArch32 and AArch64), RISC-V, and x86_64. The
