@@ -2,17 +2,31 @@ S4C is home to a set of concurrency projects targeting system software.
 
 ## Projects
 
-Currently we host 3 projects:
+- [vatomic](/vatomic): A C/C++ header library of atomics operations,
+  supporting mainstream architectures: ARMv7, ARMv8 (AArch32 and AArch64),
+  RISC-V, and x86_64. The memory ordering guarantees provided by the atomic
+  interface are formally described by the VSync Memory Model (VMM). The C
+  interface is compatible with C99 requiring no compiler extensions. The C++
+  bindings are compatible with C++11.
 
-- **[libvsync](/libvsync)**:
-libvsync is a C header-only library that contains most essential building blocks for concurrent applications,
-including atomic operations, synchronization primitives and concurrent data structures.
-The library has been verified and optimized for Weak Memory Models (WMMs) such as in Arm CPUs.
+- [libvsync](/libvsync):
+  A C header-only library that contains most essential building blocks
+  for concurrent applications, including atomic operations (vatomic),
+  synchronization primitives (eg, spinlocks, condition variable, mutexes) and
+  concurrent data structures (eg, queues, lists, maps).  The library has been
+  verified and optimized for Weak Memory Models (WMMs) such as in Arm CPUs.
 
-- **[vsyncer]**: is a toolkit to verify and optimize concurrent C/C++ programs on WMMs,
-which employs state-of-the-art model checkers [Dartagnan][] and [GenMC][].
+- [vsyncer]: is a toolkit to verify and optimize concurrent C/C++ programs
+  on WMMs, which employs state-of-the-art model checkers [Dartagnan][] and
+  [GenMC][].
 
-- **[benchkit]**: A framework to support the development of reproducible benchmarks.
+- [benchkit]: A framework to support the development of reproducible benchmarks.
+
+- [Dice](/dice): A lightweight, extensible C framework for capturing and
+  distributing execution events in multithreaded programs. Designed for low
+  overhead and high flexibility, Dice enables powerful tooling for runtime
+  monitoring, concurrency testing, and deterministic replay using a modular
+  publish-subscribe (pubsub) architecture.
 
 [vsyncer]: https://github.com/open-s4c/vsyncer
 [benchkit]: https://github.com/open-s4c/benchkit
