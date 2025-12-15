@@ -1,24 +1,23 @@
-# vatomic: Formally-verified atomic operations
+# vatomic: Formally-verified Atomic Operations
 
 vatomic is a header library of *atomics operations*, supporting mainstream
 architectures: ARMv7, ARMv8 (AArch32 and AArch64), RISC-V, and x86_64. The
 memory ordering guarantees provided by the atomic interface are formally
 described in the [VSync Memory Model (VMM)](vmm.cat) file.
 
-Users can use the `vmm.cat` file to verify the correctness of their algorithms
-with a model checker such as [Dartagnan][] or [vsyncer][].
+The C implementation is C99-compatible: the build system enforces `-std=c99`
+with compiler extensions disabled. The C++ bindings and tests are likewise
+compiled as C++11 (no compiler extensions).
+See [API documentation here](doc/api/latest/vsync/atomic/).
 
 The atomics implementations are being gradually verified to comply with VMM. At
 the moment, we have completed the verification of ARMv8 64-bits with and
-without LSE instructions, and RISC-V using compiler builtins.
+without LSE instructions and of RISC-V. ARMv8 use compiler builtins or our
+inline assembly implementation, whereas RISC-V only uses compiler builtins at
+the moment.
 
-The C implementation is C99-compatible: the build system enforces `-std=c99`
-with compiler extensions disabled, so every shipped header and test builds
-cleanly in that dialect out of the box. The C++ bindings and tests are likewise
-compiled as C++11 (no compiler extensions), which we exercise in the same
-comprehensive build.
-
-See [API documentation here](doc/api/vsync/atomic/).
+Users can use the `vmm.cat` file to verify the correctness of their algorithms
+with a model checker such as [Dartagnan][] or [vsyncer][].
 
 This project is a spinoff of the VSync project and a key component in
 [libvsync][]. Refer to our ASPLOS'21 [publication][paper] describing part of the
