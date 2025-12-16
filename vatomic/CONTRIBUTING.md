@@ -79,13 +79,13 @@ for the full list of targets and dependencies.
 
 ### API documentation
 
-A Markdown version of the API documentation is kept in `doc/api`. The process
+A Markdown version of the API documentation is kept in `doc/api/v2.4.0`. The process
 to extract the documentation of the code is performed in two steps:
 
 - [Doxygen][] parses the header files in `include` and generates a set of
   XML files.
 - [mdox][] parses the XML files and writes the new Markdown files into
-  `doc/api`.
+  `doc/api/v2.4.0`.
 
 The user has to manually install these tools to be able update the API
 documentation. The following commands create the up-to-date documentation:

@@ -8,7 +8,7 @@ described in the [VSync Memory Model (VMM)](vmm.cat) file.
 The C implementation is C99-compatible: the build system enforces `-std=c99`
 with compiler extensions disabled. The C++ bindings and tests are likewise
 compiled as C++11 (no compiler extensions).
-See [API documentation here](doc/api/latest/vsync/atomic/).
+See [API documentation here](api/v2.4.0/latest/vsync/atomic/).
 
 The atomics implementations are being gradually verified to comply with VMM. At
 the moment, we have completed the verification of ARMv8 64-bits with and
@@ -78,7 +78,7 @@ ctest --test-dir build/verify -R lse --output-on-failure
 ```
 
 Targets exist for `lse`, `llsc`, `lxe`, and `no_polite_await`. Refer to
-[`doc/VERIFICATION.md`](doc/VERIFICATION.md) for dependency details.
+[`VERIFICATION.md`](VERIFICATION.md) for dependency details.
 
 ## Releases and support
 
@@ -88,7 +88,7 @@ the architecture, compiler, and toolchain you are using.
 
 ## Contributing
 
-See [doc/CONTRIBUTING.md](doc/CONTRIBUTING.md) for guidelines on filing issues,
+See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on filing issues,
 running the test and verification suites, and preparing pull requests.
 
 ## Acknowledgements
