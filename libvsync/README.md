@@ -16,8 +16,7 @@ and optimized using vsyncer.
 We plan to gradually release more and more algorithms, including some of our own highly optimized algorithms.
 
 
-## API Documentation
-See [doc](doc/api/vsync/README.md) for details and usage examples.
+See [API documentation](api/v4.2.2/vsync) for details and usage examples.
 
 ## User Guide
 
@@ -79,7 +78,7 @@ FetchContent_MakeAvailable(libvsync)
 
 ## Developer Guide
 
-If you would like to contribute to libvsync, check out [developer guide](doc/developer_guide.md).
+If you would like to contribute to libvsync, check out [developer guide](developer_guide.md).
 
 ## License
 This library is distributed under the [MIT](LICENSE) license.
