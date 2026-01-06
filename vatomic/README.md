@@ -8,7 +8,7 @@ described in the [VSync Memory Model (VMM)](vmm.cat) file.
 The C implementation is C99-compatible: the build system enforces `-std=c99`
 with compiler extensions disabled. The C++ bindings and tests are likewise
 compiled as C++11 (no compiler extensions).
-See [API documentation here](api/v2.4.0/vsync/atomic/).
+See [API documentation here](api/v2.4.1/vsync/atomic/).
 
 The atomics implementations are being gradually verified to comply with VMM. At
 the moment, we have completed the verification of ARMv8 64-bits with and
@@ -91,13 +91,7 @@ the architecture, compiler, and toolchain you are using.
 See [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines on filing issues,
 running the test and verification suites, and preparing pull requests.
 
-## Acknowledgements
-
-This project was initially developed under the support of
-[OpenHarmony Concurrency & Coordination TSG, 并发与协同TSG][tsg].
-
 [libvsync]: https://github.com/open-s4c/libvsync
 [vsyncer]: https://github.com/open-s4c/vsyncer
 [Dartagnan]: https://github.com/hernanponcedeleon/dat3m
 [paper]: https://dl.acm.org/doi/abs/10.1145/3445814.3446748
-[tsg]: https://www.openharmony.cn/techCommittee/aboutTSG
